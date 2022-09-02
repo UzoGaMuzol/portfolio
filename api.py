@@ -37,7 +37,17 @@ def index():
             "作曲",
             "ネットサーフィン",
             "PCゲーム"
-        ]
+        ],
+        "links": {
+            "Twitter_main": "https://twitter.com/uzogamuzol",
+            "YouTube_main": "https://www.youtube.com/channel/UCsE5FbMXnmBYe-THSt3kwJQ",
+            "YouTube_sub": "https://www.youtube.com/c/sune_koko",
+            "NicoNico": "https://nicovideo.jp/user/46928394",
+            "Sound Cloud": "https://soundcloud.com/uzogamuzol",
+            "Piapro": "https://piapro.jp/icchy1128music",
+            "Kakuyomu": "https://kakuyomu.jp/users/icchy1128Novelman",
+            "GitHub": "https://github.com/UzoGaMuzol"
+        }
     }
     return jsonify(data)
 
