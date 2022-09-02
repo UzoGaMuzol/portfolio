@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Uzo Ga Muzol's Portfilio</title>
+  </head>
+  <body>
+    <h1>Welcome to API Server</h1>
+    <p>これはウゾガムゾルのポートフォリオとしてのAPIサーバーです。</p>
+    <p>Web開発者の皆さまは、私の自己紹介を好きにご自身のサイトに使用することができます。</p>
+    <h2>エンドポイント一覧</h2>
+    <dl>
+      <dt>基本的な自己紹介</dt>
+      <dd><a href="{{ url_for('api.index') }}">{{ url_for('api.index') }}</a></dd>
+      <dt>経歴</dt>
+      <dd><a href="{{ url_for('api.career') }}">{{ url_for('api.career') }}</a></dd>
+      <dt>音楽関連</dt>
+      <dd><a href="{{ url_for('api.music') }}">{{ url_for('api.music') }}</a></dd>
+      <dt>その他</dt>
+      <dd><a href="{{ url_for('api.others') }}">{{ url_for('api.others') }}</a></dd>
+      <dt>「脛孝行」として</dt>
+      <dd><a href="{{ url_for('api.as_sune_koko') }}">{{ url_for('api.as_sune_koko') }}</a></dd>
+    </dl>
+  </body>
+</html>
