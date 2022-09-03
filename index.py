@@ -1,11 +1,6 @@
 from flask import Flask, render_template
-from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(
-    app,
-    supports_credentials = True
-)
 
 app.config["JSON_AS_ASCII"] = False
 
@@ -15,3 +10,8 @@ app.register_blueprint(api_bp)
 @app.route("/")
 def index():
     return render_template("index.html")
+
+@app.after_request
+def after_request(response):
+    response.headers.update({'Access-Control-Allow-Origin': '*'})
+    return response
